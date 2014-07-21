@@ -1,0 +1,547 @@
+/*
+Theme Name: Charlene
+Description: Used to style the TinyMCE editor.
+*/
+
+
+/**
+ * Table of Contents:
+ *
+ * 1.0 - Body
+ * 2.0 - Typography
+ * 3.0 - Text Elements
+ * 4.0 - Links
+ * 5.0 - Alignment
+ * 6.0 - Tables
+ * 7.0 - Images
+ * 8.0 - Galleries
+ * 9.0 - Audio/Video
+ * 10.0 - RTL
+ * ----------------------------------------------------------------------------
+ */
+
+
+/**
+ * 1.0 Body
+ * ----------------------------------------------------------------------------
+ */
+
+html .mceContentBody {
+    font-size: 100%;
+    max-width: 624px;
+}
+
+body {
+    color: #2b2b2b;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    vertical-align: baseline;
+}
+
+
+/* 2.0 Typography
+--------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   color: #222;
+   font-weight: 400;
+   margin-bottom: 24px;
+} 
+
+h1 {
+    font-size: 38px;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 1.1;
+}  
+  
+h3 {
+    font-size: 28px;
+    line-height: 1.1
+}
+
+h4 {
+    font-size: 22px;
+    line-height: 1.1;
+}
+
+h5 {
+    font-size: 18px;
+    line-height: 1.1;
+}
+
+h6 {
+    font-size: 16px;
+    line-height: 1;
+}
+
+
+p {
+    margin-bottom:24px;
+    padding: 0;
+}
+
+
+/**
+ * 3.0 Text Elements
+ * ----------------------------------------------------------------------------
+ */
+address {
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted #2b2b2b;
+    cursor: help;
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+
+cite,
+dfn,
+em,
+i {
+    font-style: italic;
+}
+
+mark,
+ins {
+    background: #fff9c0;
+    text-decoration: none;
+}
+
+acronym {
+    text-transform: uppercase;
+}
+
+
+del {
+    text-decoration: line-through;
+}
+
+
+dl {
+    margin-bottom: 24px;
+}
+
+dt {
+    font-weight: 700;
+}
+
+dd {
+    margin-bottom: 24px;
+    margin-left: 0;
+}
+
+hr {
+    height: 0;
+    -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+            box-sizing: content-box;
+    margin-bottom: 23px;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+code,
+kbd,
+tt,
+var,
+samp,
+pre {
+    font-family: monospace, serif;
+    font-size: 15px;
+    -webkit-hyphens: none;
+    -moz-hyphens:    none;
+    -ms-hyphens:     none;
+    hyphens:         none;
+    line-height: 1.6;
+}
+
+pre {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    box-sizing:         border-box;
+    margin-bottom: 24px;
+    max-width: 100%;
+    overflow: auto;
+    padding: 12px;
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+blockquote,
+q {
+    -webkit-hyphens: none;
+    -moz-hyphens:    none;
+    -ms-hyphens:     none;
+    hyphens:         none;
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+blockquote {
+    border-left: 3px solid #ddd;
+    color: #888;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0 0 24px 12px;
+    padding-left: 12px 
+}
+
+blockquote cite,
+blockquote small {
+    color: #222;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+blockquote em,
+blockquote i {
+    font-style: normal;
+}
+
+blockquote cite:before {
+    content:"\2014";
+    margin-right: 2px;
+}
+
+blockquote cite {
+    display: block;
+    padding: 7px 0;
+}
+
+blockquote strong,
+blockquote b {
+    font-weight: 400;
+}
+
+small {
+    font-size: 75%;
+}
+
+sup, 
+sub {
+    font-size: 75%;
+    height: 0;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    bottom: 1ex;
+}
+
+sub {
+    top: .5ex;
+}
+
+big {
+    font-size:125%;
+}
+
+
+/**
+ * 4.0 Links
+ * ----------------------------------------------------------------------------
+ */
+
+a, 
+a:visited {
+    outline: none;
+    color: #80949c;
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:hover, 
+a:active {
+    color: #0f3647;
+}
+
+
+
+/**
+ * 5.0 Alignment
+ * ----------------------------------------------------------------------------
+ */
+
+.alignleft {
+    float: left;
+}
+
+.alignright {
+    float:right; 
+}
+
+.alignnone {
+    clear: both;
+    display: block;
+    margin:12px 0;
+}
+
+.aligncenter {
+    display:block; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+blockquote.alignleft,
+blockquote.alignright {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 17px;
+    width: 50%;
+}
+
+blockquote.alignleft p,
+blockquote.alignright p {
+    margin-bottom: 17px;
+}
+
+
+/**
+ * 6.0 Tables
+ * ----------------------------------------------------------------------------
+ */
+
+.mce-item-table {
+    border: 1px solid #ddd;
+    border-width: 1px 0 0 1px;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 14px;
+    line-height: 1.2857142857;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.mce-item-table th,
+.mce-item-table caption {
+    border: 1px solid #ddd;
+    border-width: 0 1px 1px 0;
+    font-weight: 700;
+    padding: 8px;
+    text-align: left;
+    text-transform: uppercase;
+    vertical-align: baseline;
+}
+
+.mce-item-table td {
+    border: 1px solid #ddd;
+    border-width: 0 1px 1px 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    padding: 8px;
+    vertical-align: baseline;
+}
+
+
+/**
+ * 7.0 Images
+ * ----------------------------------------------------------------------------
+ */
+
+img {
+    height: auto;
+    max-width: 624px;
+    vertical-align: middle;
+}
+
+.wp-caption {
+    text-align: center;
+    background: transparent;
+    margin: 0px 0px 24px 0px;
+    padding: 4px 4px 0;
+    max-width: 624px;
+}
+
+.html5-captions .wp-caption {
+    padding: 0;
+}
+
+.wp-caption.alignleft {
+    margin: 7px 14px 7px 0;
+}
+
+.html5-captions .wp-caption.alignleft {
+    margin-right: 24px;
+}
+
+.wp-caption.alignright {
+    margin: 7px 0 7px 14px;
+}
+
+.wp-caption.alignright img,
+.wp-caption.alignright .wp-caption-dd {
+    padding-left: 10px;
+}
+
+.html5-captions .wp-caption.alignright {
+    margin-left: 24px;
+}
+
+.html5-captions .wp-caption.alignright img,
+.html5-captions .wp-caption.alignright .wp-caption-dd {
+    padding: 0;
+}
+
+.wp-caption.aligncenter {
+    margin: 7px 0;
+}
+
+.wp-caption-dt {
+    margin: 0;
+}
+
+.wp-caption .wp-caption-text,
+.wp-caption-dd {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 1.5;
+    margin: 9px 0;
+    padding: 0 10px 0 0; /* Avoid the caption to overflow the width of the image because wp-caption has 10px wider width */
+    text-align: left;
+}
+
+.mceTemp + ul,
+.mceTemp + ol {
+    list-style-position: inside;
+}
+
+/**
+ * 8.0 Gallery
+ * -----------------------------------------------------------------------------
+ */
+
+.gallery {
+    margin-bottom: 20px;
+}
+
+.gallery-item {
+    float: left;
+    margin: 0 4px 4px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    box-sizing:         border-box;
+    color: #fff;
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0;
+    max-height: 50%;
+    opacity: 0;
+    padding: 6px 8px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.gallery-caption:before {
+    content: "";
+    height: 100%;
+    min-height: 49px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+/**
+ * 9.0 Audio/Video
+ * ----------------------------------------------------------------------------
+ */
+
+.mejs-mediaelement,
+.mejs-container .mejs-controls {
+    background: #000;
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-loaded,
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+    background: #fff;
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-current {
+    background: #24890d;
+}
+
+.mejs-controls .mejs-time-rail .mejs-time-total,
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
+    background: rgba(255, 255, 255, .33);
+}
+
+.mejs-controls .mejs-time-rail span,
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total,
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+    border-radius: 0;
+}
+
+.mejs-overlay-loading {
+    background: transparent;
+}
+
+
+/**
+ * 10.0 RTL
+ * ----------------------------------------------------------------------------
+ */
+
+html .mceContentBody.rtl {
+    direction: rtl;
+    unicode-bidi: embed;
+}
+
+.rtl ol,
+.rtl ul {
+    margin-left: 0;
+    margin-right: 24px;
+}
+
+.rtl .wp-caption,
+.rtl tr th {
+    text-align: right;
+}
+
+.rtl td {
+    text-align: right;
+}
