@@ -22,7 +22,7 @@ function charlene_comments( $comment, $args, $depth ) {
         
         <article class="comment-entry">
             <header class="comment-author vcard">
-                <?php printf(__( '<cite class="fn">%1$s</cite> %2$s', 'bonestheme' ), get_comment_author_link(), edit_comment_link(__( '(Edit)', 'charlene' ),'  ','') ) ?>
+                <?php printf( '<cite class="fn">%1$s</cite> %2$s', get_comment_author_link(), edit_comment_link(__( '(Edit)', 'charlene' ),'  ','') ) ?>
                 <time datetime="<?php echo comment_time('Y-m-j'); ?>"><a class="timestamp" href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>"><?php comment_time(__( 'F jS, Y', 'charlene' )); ?> </a></time>
             
                 <div class="avatar_cont">

@@ -534,7 +534,7 @@ h6 {
 
 h1 {
     font-size: 38px;
-    line-height: 1.2;
+    line-height: 1;
 }
 
 h2 {
@@ -581,13 +581,13 @@ p {
 .content-wrap,
 .wrap {
     margin:0 auto;
-    padding:20px;
+    padding:0 20px;
 }
 
 .site-header {
     margin-bottom: 24px;
-    padding:36px 0;
-    text-align:right
+    padding: 0;
+    text-align: right
 }
 
 .content-area {
@@ -651,6 +651,8 @@ h1.intro-title {
 ---------------------------------------------- */ 
 .introp {
     font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 12px;
 }
 
 .content-column-row {

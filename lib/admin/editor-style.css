@@ -431,7 +431,7 @@ img {
     font-style: italic;
     line-height: 1.5;
     margin: 9px 0;
-    padding: 0 10px 0 0; /* Avoid the caption to overflow the width of the image because wp-caption has 10px wider width */
+    padding: 0 10px 0 0;
     text-align: left;
 }
 

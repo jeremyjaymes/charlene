@@ -1,520 +1,265 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Charlene\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-10 05:29-0600\n"
-"PO-Revision-Date: 2010-08-10 05:30-0600\n"
-"Last-Translator: Jeremy <j.vossman@gmail.com>\n"
-"Language-Team: Papertree Design <themesupport@papertreedesign.com>\n"
+"Project-Id-Version: Charlene Theme 2.0\n"
+"POT-Creation-Date: 2014-07-22 06:46-0600\n"
+"PO-Revision-Date: 2014-07-22 06:49-0600\n"
+"Last-Translator: Jeremy Vossman <jeremy@papertreedesign.com>\n"
+"Language-Team:  <jeremy@papertreedesign.com>\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: _e;__;esc_attr_e;esc_attr__;esc_html_e;esc_html__\n"
-"X-Poedit-Basepath: .\n"
-"X-Poedit-Language: English\n"
-"X-Poedit-Country: United States\n"
+"X-Generator: Poedit 1.6.6\n"
+"X-Poedit-Basepath: ../\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
 "X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
 
-#: 404.php:13
+#: ../404.php:15
 msgid "Not Found"
 msgstr ""
 
-#: 404.php:15
+#: ../404.php:18
 #, php-format
-msgid "You attempted to go to %1$s, but we could not locate that file. Please try searching again to find what you're looking for."
+msgid ""
+"You attempted to go to %1$s, but we could not locate that file. Please try "
+"searching again to find what you're looking for."
 msgstr ""
 
-#: archive.php:41
-#: attachment.php:45
-#: home.php:35
-msgid "Sorry, but you are looking for something that isn't here."
-msgstr ""
-
-#: archives.php:23
-msgid "By Month:"
-msgstr ""
-
-#: archives.php:28
-msgid "By Year:"
-msgstr ""
-
-#: archives.php:33
-msgid "By Subject:"
-msgstr ""
-
-#: archives.php:44
-#: image.php:51
-#: page.php:34
-#: sans-sidebars.php:34
-#: search.php:34
-msgid "Sorry no record of that here, perhaps try again."
-msgstr ""
-
-#: attachment.php:22
-msgid "Download this file"
-msgstr ""
-
-#: attachment.php:27
-#: image.php:29
-#: page.php:21
-#: sans-sidebars.php:21
-msgid "Pages:"
-msgstr ""
-
-#: comments.php:14
-msgid "This post is password protected. Enter the password to view comments."
-msgstr ""
-
-#: comments.php:57
-msgid "Trackbacks/Pingbacks"
-msgstr ""
-
-#: comments.php:72
+#: ../author.php:25
 #, php-format
-msgid "Comments are closed, but <a href=\"%1$s\" title=\"Trackback URL for this post\">trackbacks</a> and pingbacks are open."
+msgid "<h1 class=\"author-name fn n\">Author: %s</h1>"
 msgstr ""
 
-#: comments.php:76
+#: ../author.php:55 ../content-aside.php:59 ../content-audio.php:59
+#: ../content-author.php:30 ../content-gallery.php:59 ../content-image.php:59
+#: ../content-link.php:59 ../content-quote.php:59 ../content.php:73
+msgid "Tags: "
+msgstr ""
+
+#: ../comments.php:23
+#, php-format
+msgid "One Comment"
+msgid_plural "%1$s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../comments.php:55
 msgid "Comments are closed."
 msgstr ""
 
-#: search.php:28
-msgid "&laquo; Previous Articles"
+#: ../content-aside.php:26 ../content-audio.php:26 ../content-gallery.php:26
+#: ../content-image.php:26 ../content-link.php:26 ../content-quote.php:26
+#: ../content.php:26
+#, php-format
+msgid ""
+"<span class=\"byline vcard\">Posted <time class=\"updated\" datetime=\"%1$s"
+"\" pubdate>%2$s</time> by <span class=\"author\"><a class=\"url fn n\" href="
+"\"%3$s\" rel=\"author\">%4$s</a></span></span> "
 msgstr ""
 
-#: search.php:29
-msgid "Newer Articles &raquo;"
+#: ../content-aside.php:35 ../content-audio.php:35 ../content-gallery.php:35
+#: ../content-image.php:35 ../content-link.php:35 ../content-quote.php:35
+#: ../content.php:35
+msgid "Leave a comment"
 msgstr ""
 
-#: sidebar-standard.php:18
-msgid "Recently Written"
+#: ../content-aside.php:35 ../content-audio.php:35 ../content-gallery.php:35
+#: ../content-image.php:35 ../content-link.php:35 ../content-quote.php:35
+#: ../content.php:35
+msgid "1 Comment"
 msgstr ""
 
-#: sidebar-standard.php:40
-msgid "Search:"
+#: ../content-aside.php:35 ../content-audio.php:35 ../content-gallery.php:35
+#: ../content-image.php:35 ../content-link.php:35 ../content-quote.php:35
+#: ../content.php:35
+msgid "% Comments"
 msgstr ""
 
-#: sidebar-standard.php:47
-msgid "Categories"
+#: ../content-aside.php:42 ../content-audio.php:42 ../content-gallery.php:42
+#: ../content-image.php:42 ../content-link.php:42 ../content-quote.php:42
+#: ../content.php:55 ../image.php:38
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: library/admin/post-custom.php:10
-#: library/extensions/shortcode.php:26
-msgid "Charlene"
+#: ../content-aside.php:45 ../content-audio.php:45 ../content-gallery.php:45
+#: ../content-image.php:45 ../content-link.php:45 ../content-quote.php:45
+#: ../content.php:58 ../image.php:41 ../page-no-sidebar.php:31 ../page.php:31
+msgid "Pages:"
 msgstr ""
 
-#: library/admin/post-custom.php:27
-msgid "Charlene Post Options"
+#: ../content-aside.php:56 ../content-audio.php:56 ../content-author.php:27
+#: ../content-gallery.php:56 ../content-image.php:56 ../content-link.php:56
+#: ../content-quote.php:56 ../content.php:70
+#, php-format
+msgid "<span class=\"entry-categories\">Filed under: %s</span>"
 msgstr ""
 
-#: library/admin/post-custom.php:38
-msgid "Meta Title"
+#: ../content-noposts.php:12
+msgid "Nothing Found"
 msgstr ""
 
-#: library/admin/post-custom.php:39
-msgid "Meta Description"
+#: ../content-noposts.php:18
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
-#: library/admin/post-custom.php:40
-msgid "Meta Keywords Comma Separated"
+#: ../content-noposts.php:22
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
 msgstr ""
 
-#: library/admin/theme-options-old.php:31
-msgid "General"
+#: ../content-noposts.php:27
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
 msgstr ""
 
-#: library/admin/theme-options-old.php:36
-msgid "SEO"
-msgstr ""
-
-#: library/admin/theme-options-old.php:37
-msgid "Check to deactivate SEO if you are using plugins like All-In-One-SEO-Pack to avoid duplicate Meta Content"
-msgstr ""
-
-#: library/admin/theme-options-old.php:42
-msgid "Site Keywords"
-msgstr ""
-
-#: library/admin/theme-options-old.php:43
-msgid "Enter comma separated keywords."
-msgstr ""
-
-#: library/admin/theme-options-old.php:48
-msgid "Site Description"
-msgstr ""
-
-#: library/admin/theme-options-old.php:49
-msgid "Custom Default Meta Description used in home page."
-msgstr ""
-
-#: library/admin/theme-options-old.php:56
-msgid "Meta Verify"
-msgstr ""
-
-#: library/admin/theme-options-old.php:57
-msgid "Google Verify Code Perhaps"
-msgstr ""
-
-#: library/admin/theme-options-old.php:64
-msgid "Favicon"
-msgstr ""
-
-#: library/admin/theme-options-old.php:65
-msgid "Enter the full path to your custom favicon here."
-msgstr ""
-
-#: library/admin/theme-options-old.php:70
-msgid "Feedburner"
-msgstr ""
-
-#: library/admin/theme-options-old.php:71
-msgid "Enter your Google Feedburner url here."
-msgstr ""
-
-#: library/admin/theme-options-old.php:76
-msgid "Analytics"
-msgstr ""
-
-#: library/admin/theme-options-old.php:77
-msgid "Enter your Analytics Tracking codes here."
-msgstr ""
-
-#: library/admin/theme-options-old.php:91
-msgid "Site Title"
-msgstr ""
-
-#: library/admin/theme-options-old.php:92
-msgid "Enter custom site title (upper right), defaults to blog name."
-msgstr ""
-
-#: library/admin/theme-options-old.php:97
-msgid "Header Quote"
-msgstr ""
-
-#: library/admin/theme-options-old.php:98
-msgid "Enter header quote or tagline here (below site title)."
-msgstr ""
-
-#: library/admin/theme-options-old.php:107
-msgid "Front Page"
-msgstr ""
-
-#: library/admin/theme-options-old.php:112
-msgid "Home Title"
-msgstr ""
-
-#: library/admin/theme-options-old.php:113
-msgid "Enter the home page main title here."
-msgstr ""
-
-#: library/admin/theme-options-old.php:120
-msgid "Intro Paragraph"
-msgstr ""
-
-#: library/admin/theme-options-old.php:121
-msgid "Enter the block of text the appears under the site title here."
-msgstr ""
-
-#: library/admin/theme-options-old.php:128
-msgid "Content Settings"
-msgstr ""
-
-#: library/admin/theme-options-old.php:129
-msgid "Chose to display the_content on home page, defaults to the_excerpt."
-msgstr ""
-
-#: library/admin/theme-options-old.php:136
-msgid "Footer"
-msgstr ""
-
-#: library/admin/theme-options-old.php:141
+#: ../footer.php:18
 msgid "Copyright"
 msgstr ""
 
-#: library/admin/theme-options-old.php:142
-msgid "Enter footer text here. I would of course appreciate a link to http://papertreedesign.com/themes/, but it's your call."
-msgstr ""
-
-#: library/admin/theme-options.php:69
-msgid "General Options"
-msgstr ""
-
-#: library/admin/theme-options.php:70
-msgid "Header Options"
-msgstr ""
-
-#: library/admin/theme-options.php:71
-msgid "Front Page Options"
-msgstr ""
-
-#: library/admin/theme-options.php:72
-msgid "Footer Options"
-msgstr ""
-
-#: library/admin/theme-options.php:85
-msgid "Check this if you are using All In One SEO, Headspace etc."
-msgstr ""
-
-#: library/admin/theme-options.php:92
-msgid "You don't want to mess with child themes but you do want to protect your css customizations from upgrades, check this and use add-style.css. <strong>This is a test feature and may be removed in the future.</strong>"
-msgstr ""
-
-#: library/admin/theme-options.php:98
-msgid "Enter main site meta description."
-msgstr ""
-
-#: library/admin/theme-options.php:104
-msgid "A perfect place for Google meta verification."
-msgstr ""
-
-#: library/admin/theme-options.php:110
-msgid "Enter full path to favicon.ico."
-msgstr ""
-
-#: library/admin/theme-options.php:116
-msgid "Enter your Feedburner url."
-msgstr ""
-
-#: library/admin/theme-options.php:122
-msgid "Enter your Google Analytics account or \"web property Id\" which will start with UA-. Please note that this will insert the standard tracking code not legacy or asynchronous."
-msgstr ""
-
-#: library/admin/theme-options.php:137
-msgid "Enter a custom site title (upper right), defaults to blog name."
-msgstr ""
-
-#: library/admin/theme-options.php:143
-msgid "Enter the header quote or tagline here (below site title)."
-msgstr ""
-
-#: library/admin/theme-options.php:158
-msgid "Enter main home page title, just above post area."
-msgstr ""
-
-#: library/admin/theme-options.php:164
-msgid "Enter the block of text that appears under the home title here."
-msgstr ""
-
-#: library/admin/theme-options.php:170
-msgid "Choose to display the_content on home. Default is the_excerpt."
-msgstr ""
-
-#: library/admin/theme-options.php:172
-msgid "Choose to display the_content on archives etc. Default is the_excerpt."
-msgstr ""
-
-#: library/admin/theme-options.php:178
-msgid "Would you like to display thumbnails?."
-msgstr ""
-
-#: library/admin/theme-options.php:184
-msgid "Set Thumbnail width - thumbnails must be enabled."
-msgstr ""
-
-#: library/admin/theme-options.php:186
-msgid "Set Thumbnail height - thumbnails must be enabled."
-msgstr ""
-
-#: library/admin/theme-options.php:201
-msgid "Enter custom copyright text, we of course appreciate a link but it is not required.<br /> This section will be output within paragraph tags and therefore only certain html is allowed: custom links,"
-msgstr ""
-
-#: library/admin/theme-options.php:201
-msgid "Shortcodes are also available:"
-msgstr ""
-
-#: library/admin/theme-options.php:260
-msgid "[theme_copy] [wp_link] and [theme_attrib]"
-msgstr ""
-
-#: library/admin/theme-options.php:296
-msgid "Charlene Theme Options"
-msgstr ""
-
-#: library/admin/theme-options.php:297
-msgid "Version: "
-msgstr ""
-
-#: library/admin/theme-options.php:298
+#: ../footer.php:19
 #, php-format
-msgid "Documentation and support is available at <a href=\"%1$s\">http://papertreedesign.com/themes/</a>"
+msgid "Powered by %1$s and %2$s"
 msgstr ""
 
-#: library/admin/theme-options.php:311
-msgid "Save Changes"
+#: ../functions.php:132
+msgid "Site Intro"
 msgstr ""
 
-#: library/extensions/shortcode.php:19
-msgid "Powered by WordPress"
+#: ../functions.php:142
+msgid ""
+"The main widget area. If the sidebar is split left and right this is the "
+"left area."
 msgstr ""
 
-#: library/extensions/shortcode.php:26
-msgid "Papertree Design Themes"
+#: ../functions.php:153
+msgid ""
+"A useful widget area which appears after the post single and before comments."
 msgstr ""
 
-#: library/extensions/shortcode.php:33
-msgid "Copyright &copy;"
+#: ../image.php:25
+msgid "Parent Post: "
 msgstr ""
 
-#: library/functions/dochead-functions.php:25
-msgid "404 Not Found"
+#: ../image.php:50
+msgid "Previous Image"
 msgstr ""
 
-#: library/functions/dochead-functions.php:28
-msgid "Category Archive for:"
+#: ../image.php:51
+msgid "Next Image"
 msgstr ""
 
-#: library/functions/dochead-functions.php:32
-msgid "Search Results for "
+#: ../lib/functions/template-functions.php:20
+#: functions/template-functions.php:20
+msgid "Page"
 msgstr ""
 
-#: library/functions/dochead-functions.php:36
-msgid "Archives for:"
+#: ../lib/functions/template-functions.php:31
+#: functions/template-functions.php:31
+msgid "&laquo; Previous"
 msgstr ""
 
-#: library/functions/dochead-functions.php:62
+#: ../lib/functions/template-functions.php:32
+#: functions/template-functions.php:32
+msgid "Next &raquo;"
+msgstr ""
+
+#: ../lib/functions/template-functions.php:70
+#: functions/template-functions.php:70
 #, php-format
 msgid "Page %s"
 msgstr ""
 
-#: library/functions/dochead-functions.php:213
-msgid "RSS Feed"
-msgstr ""
-
-#: library/functions/dochead-functions.php:229
-msgid "Comments RSS feed"
-msgstr ""
-
-#: library/functions/post-functions.php:63
-msgid "Written by "
-msgstr ""
-
-#: library/functions/post-functions.php:95
-#: library/functions/post-functions.php:98
-#: library/functions/post-functions.php:101
-msgid "Comment on "
-msgstr ""
-
-#: library/functions/post-functions.php:96
-msgid " Comments"
-msgstr ""
-
-#: library/functions/post-functions.php:99
-msgid " Comment"
-msgstr ""
-
-#: library/functions/post-functions.php:102
-msgid "Leave a comment"
-msgstr ""
-
-#: library/functions/post-functions.php:108
-msgid "Continue Reading &#187;"
-msgstr ""
-
-#: library/functions/template-functions.php:164
-msgid "&laquo; Previous "
-msgstr ""
-
-#: library/functions/template-functions.php:169
-msgid "Next &raquo;"
-msgstr ""
-
-#: library/functions/template-functions.php:185
-msgid "Search..."
-msgstr ""
-
-#: library/functions/template-functions.php:188
-msgid "Go"
-msgstr ""
-
-#: library/functions/theme-comments.php:18
-msgid "*"
-msgstr ""
-
-#: library/functions/theme-comments.php:21
-msgid "Name"
-msgstr ""
-
-#: library/functions/theme-comments.php:22
-msgid "Mail"
-msgstr ""
-
-#: library/functions/theme-comments.php:23
-msgid "Website"
-msgstr ""
-
-#: library/functions/theme-comments.php:28
-msgid "Comment"
-msgstr ""
-
-#: library/functions/theme-comments.php:29
+#: ../lib/functions/theme-comments.php:25 functions/theme-comments.php:25
 #, php-format
-msgid "You must be <a href=\"%1$s\" title=\"Log in\">logged in</a> to post a comment."
+msgid "<cite class=\"fn\">%1$s</cite> %2$s"
 msgstr ""
 
-#: library/functions/theme-comments.php:30
-#, php-format
-msgid "Logged in as <a href=\"%1$s\" title=\"%2$s\">%2$s</a>."
+#: ../lib/functions/theme-comments.php:25 functions/theme-comments.php:25
+msgid "(Edit)"
 msgstr ""
 
-#: library/functions/theme-comments.php:30
-msgid "Log out of this account"
+#: ../lib/functions/theme-comments.php:26 functions/theme-comments.php:26
+msgid "F jS, Y"
 msgstr ""
 
-#: library/functions/theme-comments.php:30
-msgid "Log out &raquo;"
+#: ../lib/functions/theme-comments.php:37 functions/theme-comments.php:37
+msgid ""
+"<span class=\"not-approved\">Your comment is awaiting moderation.</span>"
 msgstr ""
 
-#: library/functions/theme-comments.php:35
-msgid "Leave a Comment"
+#: ../lib/functions/theme-customizer.php:40 functions/theme-customizer.php:40
+msgid "Link Color"
 msgstr ""
 
-#: library/functions/theme-comments.php:36
-#, php-format
-msgid "Leave a Reply to %s"
+#: ../lib/functions/theme-customizer.php:48 functions/theme-customizer.php:48
+msgid "Link Hover Color"
 msgstr ""
 
-#: library/functions/theme-comments.php:37
-msgid "Cancel Reply"
+#: ../lib/widgets/recent-posts.php:26 widgets/recent-posts.php:26
+msgid "Charlene Theme Recent Posts Widget"
 msgstr ""
 
-#: library/functions/theme-comments.php:38
-msgid "Submit"
+#: ../lib/widgets/recent-posts.php:27 widgets/recent-posts.php:27
+msgid "Recent Posts Widget for Charlene"
 msgstr ""
 
-#: library/functions/theme-comments.php:66
-msgid "<span class=\"not-approved\">Your comment is awaiting moderation.</span>"
+#: ../lib/widgets/recent-posts.php:111 widgets/recent-posts.php:111
+msgid "Recently Written"
 msgstr ""
 
-#: library/functions/widgets.php:53
-msgid "The main widget area. If the sidebar is split left and right this is the left area."
-msgstr ""
-
-#: library/functions/widgets.php:63
-msgid "The main widget area. If the sidebar is split left and right this is the right area."
-msgstr ""
-
-#: library/functions/widgets.php:74
-msgid "A useful widget area which appears after the post single and before comments."
-msgstr ""
-
-#: library/widgets/recent-posts.php:36
-msgid "An advanced widget to control Recent Post similar to the Demo"
-msgstr ""
-
-#: library/widgets/recent-posts.php:42
-msgid "Charlene Theme Recent"
-msgstr ""
-
-#: library/widgets/recent-posts.php:115
+#: ../lib/widgets/recent-posts.php:120 widgets/recent-posts.php:120
 msgid "Title:"
 msgstr ""
 
-#: library/widgets/recent-posts.php:118
+#: ../lib/widgets/recent-posts.php:123 widgets/recent-posts.php:123
 msgid "Number of posts to show:"
 msgstr ""
 
-#: library/widgets/recent-posts.php:120
+#: ../lib/widgets/recent-posts.php:125 widgets/recent-posts.php:125
 msgid "(at most 10)"
 msgstr ""
 
+#: ../search.php:19
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../taxonomy-post_format.php:22
+msgid "Aside Archives"
+msgstr ""
+
+#: ../taxonomy-post_format.php:25
+msgid "Image Archives"
+msgstr ""
+
+#: ../taxonomy-post_format.php:28
+msgid "Video Archives"
+msgstr ""
+
+#: ../taxonomy-post_format.php:31
+msgid "Audio Archives"
+msgstr ""
+
+#: ../taxonomy-post_format.php:34
+msgid "Quote Archives"
+msgstr ""
+
+#: ../taxonomy-post_format.php:37
+msgid "Link Archives"
+msgstr ""
+
+#: ../taxonomy-post_format.php:40
+msgid "Gallery Archives"
+msgstr ""
+
+#: ../taxonomy-post_format.php:43
+msgid "Archives"
+msgstr ""
