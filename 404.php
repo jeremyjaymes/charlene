@@ -1,28 +1,31 @@
 <?php
 /**
- * Page Template displays 404 (not found).
+ * 404 Error Template
  *
  * @package Charlene
- * @subpackage Template
+ * @since Charlene 1.0
  */
 
 get_header(); ?>
 	<div id="primary" class="content-area col_4">
+        <main class="content" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
 
-		<div class="entry error-404">
+		<article class="entry error-404">
 
 			<header class="page-header">
 				<h1 class="page-title"><?php _e( 'Not Found', 'charlene' ); ?></h1>
-			</div>
-
-			<p><?php printf( __( 'You attempted to go to %1$s, but we could not locate that file. Please try searching again to find what you\'re looking for.', 'charlene' ), '<code>' . site_url( esc_url( $_SERVER['REQUEST_URI'] ) ) . '</code>' ); ?></p>
-
+			</header>
+            
+            <div class="error-message">
+                <?php printf( __( '<p>It looks like the page you have requested no longer exists, you can return to the sites <a href="%s">homepage</a> or try a search using the form below.</p>', 'charlene' ), home_url() ); ?>
+            </div>
+            
 			<?php get_search_form(); ?>
-		</div><!-- end .post .error-404 -->	
-
+		</article<!-- .error-404 -->	
+        
+        </main>
 	</div><!-- end primary -->
 
 <?php 
 get_sidebar();
 get_footer(); 
-?>
