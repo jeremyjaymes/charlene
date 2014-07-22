@@ -581,7 +581,6 @@ p {
 .content-wrap,
 .wrap {
     margin:0 auto;
-    padding:0 20px;
 }
 
 .site-header {
@@ -618,13 +617,13 @@ p {
 
 .site-intro {
     border-bottom: 1px dotted #ddd;
-    font-size: 21px;
+    font-size: 18px;
     margin-bottom: 48px;    
     padding-bottom: 24px;
 }
 
 h1.intro-title {
-    font-size: 48px;
+    font-size: 38px;
     font-weight: 700;
     line-height: 1;
 }
@@ -673,7 +672,6 @@ h1.intro-title {
 
 .entry-meta {
     margin-bottom: 24px;
-    margin-top: -12px;
     font-size: 15px;
     font-weight: 700;
 }
@@ -1038,6 +1036,7 @@ h1.intro-title {
     .content-wrap,
     .wrap {
         max-width: 990px;
+        padding: 0 20px;
     }
     
     /* Grid
@@ -1082,7 +1081,15 @@ h1.intro-title {
     .push_4{margin-left:68.67%;}
     .push_5{margin-left:85.83%;}
 
-    .page-template-page-no-sidebar-php .content {
+    .site-intro {
+        font-size: 21px;
+    }
+
+    h1.intro-title {
+        font-size: 48px;
+    }
+
+    .full-width-content .content {
         padding: 0 6.75%;
     }
 
@@ -1096,7 +1103,8 @@ h1.intro-title {
         font-size: 14px;
     }
 
-    .entry-content a:after {
+    .entry-content a:after,
+    .entry-footer a:after {
         content: " ("attr(href)") "
     }
     
@@ -1104,4 +1112,47 @@ h1.intro-title {
         color: black;
         text-decoration: none;
     }
+
+    .sidebar-secondary,
+    .pagination,
+    #comments {
+        display: none;
+    }
+
+    .col_1, 
+    .col_1p, 
+    .col_2, 
+    .col_2p, 
+    .col_3, 
+    .col_3p, 
+    .col_4, 
+    .col_4p, 
+    .col_5, 
+    .col_5p, 
+    .col_6, 
+    .col_6p {
+        float: none; 
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .push_0,
+    .push_1,
+    .push_2,
+    .push_3,
+    .push_4,
+    .push_5 {
+        margin: 0;
+    }
+
+    .site-title {
+        border-bottom: 1px solid black;
+    }
+
+    .site-info {
+        border-top: 1px solid black;
+    }
+
+
 }
