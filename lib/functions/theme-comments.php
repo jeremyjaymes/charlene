@@ -33,7 +33,7 @@ function charlene_comments( $comment, $args, $depth ) {
 
             </header><!-- end .comment-left-->
       
-            <section class="comment-text">
+            <section class="comment-content">
             <?php if ( $comment->comment_approved == '0' ) _e( '<span class="not-approved">Your comment is awaiting moderation.</span>', 'charlene' ); ?>
                 
                 <span class="comment-content">

@@ -2,10 +2,12 @@
 Theme Name: Charlene
 Theme URI: http://papertreedesign.com/themes/
 Description: Minimal, Two-column WordPress theme.
-Version: 2.0-beta
+Version: 2.0-beta.1
 Author: Papertree Design
 Author URI: http://papertreedesign.com
-Tags: minimal, two-column, typography, theme-options
+Tags: minimal, two-column, typography
+GitHub Theme URI: https://github.com/jeremyjaymes/charlene
+GitHub Branch: master
 
 Charlene and the Eighttwenty Framework are copyright Papertree Design http://papertreedesign.com and released under 
 GNU General Public License, version 2 (GPL). http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
@@ -654,6 +656,15 @@ h1.intro-title {
     margin-bottom: 12px;
 }
 
+.entry-content,
+.entry-summary {
+    -webkit-hyphens: auto;
+    -moz-hyphens:    auto;
+    -ms-hyphens:     auto;
+    hyphens:         auto;
+    word-wrap: break-word;
+}
+
 .content-column-row {
     margin-bottom: 24px;
 }
@@ -832,8 +843,13 @@ h1.intro-title {
     font-size:10px;
     line-height: 1em;
 }
-    
-.comment-text {
+
+.comment-content {
+    -webkit-hyphens: auto;
+    -moz-hyphens:    auto;
+    -ms-hyphens:     auto;
+    hyphens:         auto;
+    word-wrap: break-word;
     border-top:1px solid #ccc;
     float:left;
     padding:0 10px;

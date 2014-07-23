@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Charlene Theme 2.0\n"
-"POT-Creation-Date: 2014-07-22 06:46-0600\n"
-"PO-Revision-Date: 2014-07-22 06:49-0600\n"
+"POT-Creation-Date: 2014-07-22 16:27-0600\n"
+"PO-Revision-Date: 2014-07-23 04:57-0600\n"
 "Last-Translator: Jeremy Vossman <jeremy@papertreedesign.com>\n"
 "Language-Team:  <jeremy@papertreedesign.com>\n"
 "Language: en_US\n"
@@ -18,15 +18,16 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
-#: ../404.php:15
+#: ../404.php:16
 msgid "Not Found"
 msgstr ""
 
-#: ../404.php:18
+#: ../404.php:20
 #, php-format
 msgid ""
-"You attempted to go to %1$s, but we could not locate that file. Please try "
-"searching again to find what you're looking for."
+"<p>It looks like the page you have requested no longer exists, you can "
+"return to the sites <a href=\"%s\">homepage</a> or try a search using the "
+"form below.</p>"
 msgstr ""
 
 #: ../author.php:25
@@ -175,11 +176,6 @@ msgstr ""
 #: functions/template-functions.php:70
 #, php-format
 msgid "Page %s"
-msgstr ""
-
-#: ../lib/functions/theme-comments.php:25 functions/theme-comments.php:25
-#, php-format
-msgid "<cite class=\"fn\">%1$s</cite> %2$s"
 msgstr ""
 
 #: ../lib/functions/theme-comments.php:25 functions/theme-comments.php:25
