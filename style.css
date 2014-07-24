@@ -2,7 +2,7 @@
 Theme Name: Charlene
 Theme URI: http://papertreedesign.com/themes/
 Description: Minimal, Two-column WordPress theme.
-Version: 2.0-beta.1
+Version: 2.0-beta.1.1
 Author: Papertree Design
 Author URI: http://papertreedesign.com
 Tags: minimal, two-column, typography
@@ -587,16 +587,12 @@ p {
 
 .site-header {
     margin-bottom: 24px;
-    padding: 0;
+    padding-top: 24px;
     text-align: right
 }
 
 .content-area {
     position: relative;
-}
-
-.sidebar-secondary {
-    padding: 10px;
 }
 
 
@@ -628,11 +624,6 @@ h1.intro-title {
     font-size: 38px;
     font-weight: 700;
     line-height: 1;
-}
-
-.tagline {
-    font-size:1em;
-    margin:0px 0 2.7em 0;
 }
 
 .pagination {
@@ -883,10 +874,12 @@ h1.intro-title {
 
 /* ## Sidebar
 --------------------------------------------- */
+.sidebar-secondary {
+    padding: 24px 10px;
+}
+
 .sidebar-secondary h4 {
-    font-size:1.15em;
-    margin:0.67em 0;
-    text-transform:uppercase
+    font-size: 24px;
 }
 
 .sidebar-secondary ul {
@@ -915,7 +908,7 @@ h1.intro-title {
 /* ## Widgets
 --------------------------------------------- */
 .widget {
-    margin-bottom: 24px;
+    margin:12px 0 24px 0;
 }
 
 /* Calendar Widget*/
@@ -952,13 +945,13 @@ h1.intro-title {
 }
 
 .widget_calendar tbody a {
-    background-color: #24890d;
+    background-color: #80949c;
     color: #fff;
     display: block;
 }
 
 .widget_calendar tbody a:hover {
-    background-color: #41a62a;
+    background-color: #0f3647;
 }
 
 .widget_calendar tbody a:hover {
