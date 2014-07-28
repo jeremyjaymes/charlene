@@ -67,10 +67,13 @@ class Charlene_Theme_Customize {
       ?>
       <!--Customizer CSS--> 
       <style type="text/css">
-           <?php self::generate_css('a, a:visited', 'color', 'link_color'); ?>
-           <?php self::generate_css('input[type="button"], input[type="reset"], input[type="submit"], button', 'background-color', 'link_color'); ?>
-           <?php self::generate_css('.entry-title a:hover, .sidebar-secondary a:hover, .entry-title a:active, .sidebar-secondary a:active ', 'color', 'link_color'); ?>
-           <?php self::generate_css('a:hover, a:active', 'color', 'link_hover_color'); ?>
+           <?php 
+              self::generate_css('a, a:visited', 'color', 'link_color');
+              self::generate_css('input[type="button"], input[type="reset"], input[type="submit"], button', 'background-color', 'link_color');
+              self::generate_css('input[type="button"], input[type="reset"], input[type="submit"], button', 'border-color', 'link_color');
+              self::generate_css('.entry-title a:hover, .sidebar-secondary a:hover, .entry-title a:active, .sidebar-secondary a:active ', 'color', 'link_color');
+              self::generate_css('a:hover, a:active', 'color', 'link_hover_color'); 
+            ?>
       </style> 
       <!--/Customizer CSS-->
       <?php

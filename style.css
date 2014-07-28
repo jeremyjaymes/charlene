@@ -1,30 +1,18 @@
 /**
 Theme Name: Charlene
 Theme URI: http://papertreedesign.com/themes/
-Description: Minimal, Two-column WordPress theme.
+Description: A simple, user-friendly, two column theme that is meant to put focus on your content.
 Version: 2.0-beta.1.1
 Author: Papertree Design
 Author URI: http://papertreedesign.com
-Tags: minimal, two-column, typography
+Tags: two-column, right-sidebar, responsive, html5, post-formats, featured-images, translation-ready
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 GitHub Theme URI: https://github.com/jeremyjaymes/charlene
 GitHub Branch: master
 
-Charlene and the Eighttwenty Framework are copyright Papertree Design http://papertreedesign.com and released under 
-GNU General Public License, version 2 (GPL). http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-
-This program is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along
-with this program; if not, write to the Free Software Foundation, Inc.,
-51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+Copyright (c) 2008 - 2014 Papertree Design 
+http://papertreedesign.com 
 */
 
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
@@ -490,7 +478,7 @@ img.aligncenter,
 a, 
 a:visited {
     outline: none;
-    color: #80949c; /*-- #ff2b06 --*/
+    color: #80949c;
     text-decoration: none
 }
 
