@@ -454,16 +454,14 @@ img.aligncenter,
 
 .screen-reader-text:focus {
     background-color: #f1f1f1;
-    border-radius: 3px;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
     clip: auto;
-    color: #21759b;
+    color: #0066CC;
     display: block;
-    font-size: 14px;
     font-weight: bold;
     height: auto;
     line-height: normal;
-    padding: 15px 23px 14px;
+    padding: 15px 25px;
     position: absolute;
     left: 5px;
     top: 5px;

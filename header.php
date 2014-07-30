@@ -32,8 +32,8 @@
 
 <body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
 
-
 <div id="page" class="site-container">
+   <a href="#primary" class="screen-reader-text skip">Skip to content</a>
 	
 	<header class="site-header wrap" role="banner" itemscope itemtype="http://schema.org/WPHeader">
       <div class="title col_2 push_4">

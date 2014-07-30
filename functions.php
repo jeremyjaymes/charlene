@@ -140,8 +140,8 @@ function charlene_widgets_init() {
        'name' => 'Sidebar Main',
        'id' => 'sidebar-main',
        'description' => __('The main widget area. If the sidebar is split left and right this is the left area.', 'charlene'),
-       'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-       'after_widget' => '</aside>',
+       'before_widget' => '<section id="%1$s" class="widget %2$s">',
+       'after_widget' => '</section>',
        'before_title' => '<h4 class="widgettitle">',
        'after_title' => '</h4>',
     ));
@@ -176,6 +176,9 @@ function charlene_scripts_and_styles() {
         wp_register_style( 'charlene-ie-stylesheet', get_stylesheet_directory_uri() . '/lib/css/ie.css', array(), '', '' );
         wp_style_add_data( 'charlene-ie-stylesheet', 'conditional', 'lt IE 9' );
 
+        // register theme js
+        wp_register_script( 'charlene-theme-functions', get_stylesheet_directory_uri() . '/lib/js/theme-functions.js', array('jquery'), '', true );
+
 
         // comment reply script for threaded comments
         if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
@@ -185,6 +188,7 @@ function charlene_scripts_and_styles() {
         // enqueue everything
         wp_enqueue_style( 'charlene-stylesheet' );
         wp_enqueue_style( 'charlene-ie-stylesheet' );
+        wp_enqueue_script( 'charlene-theme-functions' );
 
     }
 

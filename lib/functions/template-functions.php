@@ -22,7 +22,8 @@ function charlene_paging_nav() {
 	if ( $wp_query->max_num_pages <= 1 )
     return;
 	
-	echo '<nav class="pagination">';
+	echo '<nav class="pagination" role="navigation">';
+    echo '<h1 class="screen-reader-text">' . __( 'All Posts Navigation', 'charlene' ) . '</h1>';
 	echo paginate_links( array(
 		'base'               => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
 		'format'             => '?paged=%#%',
