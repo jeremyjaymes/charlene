@@ -12,18 +12,18 @@ get_header();
 ?>
 
     <div id="primary" class="content-area col_4">
-        <main class="content" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+        <main class="content" role="main" itemprop="mainContentOfPage">
         
     	<?php 
             while ( have_posts() ) : the_post(); ?>
     	    
-            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemscope itemtype="http://schema.org/CreativeWork">
                 
                 <header class="entry-header">
-                    <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+                    <?php the_title( '<h1 class="entry-title" itemprop="headline">', '</h1>' ); ?>
                 </header>
     				
-                <div class="entry-content entry">
+                <div class="entry-content entry" itemprop="text">
                     <?php 
                         the_content();
     					

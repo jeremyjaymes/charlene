@@ -11,25 +11,25 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area col_4">
-		<main class="content" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+		<main class="content" role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog">
 		
 		<?php 
 			if ( have_posts() ) : ?>
 			
-			<header class="author-profile vcard">
+			<header class="author-profile vcard" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
 				
 				<?php 
 
 					the_post(); 
 
-					printf( __( '<h1 class="author-name fn n">Author: %s</h1>', 'charlene' ), get_the_author() );
+					printf( __( '<h1 class="author-name fn n" itemprop="name">Author: %s</h1>', 'charlene' ), get_the_author() );
 				?>
 
 				<?php if ( get_the_author_meta( 'description' ) ) : ?>
-					<div class="author-description"><?php the_author_meta( 'description' ); ?></div>
+					<div class="author-description" itemprop="description"><?php the_author_meta( 'description' ); ?></div>
 				<?php endif; ?>
 				<?php if ( get_the_author_meta( 'user_url' ) ) : ?>
-					<p class="url"><?php the_author_meta( 'user_url' ); ?></p>
+					<p class="url" itemprop="url"><?php the_author_meta( 'user_url' ); ?></p>
 				<?php endif; ?>
 		    </header><!-- .author-info -->
 
@@ -40,7 +40,7 @@ get_header(); ?>
 			// Start the Loop.
 			while ( have_posts() ) : the_post(); ?>
 
-				 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemscope="itemscope" itemtype="http://schema.org/BlogPosting" role="article" > 
+				 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemscope itemtype="http://schema.org/BlogPosting" role="article" > 
              
 				   <header class="entry-header">
 				      <?php
@@ -52,7 +52,7 @@ get_header(); ?>
 				      <?php the_excerpt(); ?>
 				   </div><!-- .entry-summary -->              
 				            
-				   <?php the_tags( '<footer class="entry-footer"><span class="tags">' . __( 'Tags: ', 'charlene' ) . '</span>', ', ', '</footer>' ); ?>   
+				   <?php the_tags( '<footer class="entry-footer"><span class="tags" itemprop="keywords">' . __( 'Tags: ', 'charlene' ) . '</span>', ', ', '</footer>' ); ?>   
 				         
 				</article><!-- .post -->
 

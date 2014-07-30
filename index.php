@@ -10,7 +10,7 @@
 get_header(); ?>
 
    <div id="primary" class="content-area col_4 push_0">
-      <main class="content" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+      <main class="content" role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog">
 
       <?php 
          /**

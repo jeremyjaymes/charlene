@@ -12,23 +12,25 @@ get_header();
 ?>
 
     <div id="primary" class="content-area col_6">
-        <main class="content" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+        <main class="content" role="main" itemprop="mainContentOfPage">
         <?php 
             while ( have_posts() ) : the_post(); 
         ?>
             
-            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemscope itemtype="http://schema.org/CreativeWork">
                 
                 <header class="entry-header">
-                    <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+                    <?php the_title( '<h1 class="entry-title" itemprop="headline">', '</h1>' ); ?>
                 </header>
                     
-                <div class="entry-content entry">
-                    <?php the_content(); ?>
-                        
+                <div class="entry-content entry" itemprop="text">
                     <?php 
+                        the_content();
+                        
                         wp_link_pages( array(
-                            'before' => '<p><strong>' . __( 'Pages:','charlene' ), 'after' => '</strong></p>', 'next_or_number' => 'number'
+                            'before' => '<nav class="page-links"><span class="page-links-title">' . __( 'Pages:','charlene' ),
+                            'after' => '</span></nav>', 
+                            'next_or_number' => 'number'
                         )); 
                     ?>
                 

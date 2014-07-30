@@ -13,7 +13,7 @@
 
    <?php if ( is_active_sidebar ( 'sidebar-main' ) ) : ?>
              
-      <aside class="sidebar-secondary widget-area col_2 push_4" role="complimentary">
+      <aside class="sidebar-secondary widget-area col_2 push_4" role="complimentary" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
          <?php dynamic_sidebar('sidebar-main'); ?>
       </aside>
    

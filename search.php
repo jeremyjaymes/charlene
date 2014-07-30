@@ -11,7 +11,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area col_4">
-		<main class="content" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+		<main class="content" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/SearchResultsPage">
 		
 			<?php if ( have_posts() ) : ?>
 
