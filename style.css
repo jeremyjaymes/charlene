@@ -470,7 +470,7 @@ img.aligncenter,
     text-decoration: none;
     text-transform: none;
     width: auto;
-    z-index: 100000; /* Above WP toolbar */
+    z-index: 100000;
 }
 
 /* ## Links
@@ -750,7 +750,7 @@ h1.intro-title {
 }
 
 .gallery-caption {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #333;
     -webkit-box-sizing: border-box;
     -moz-box-sizing:    border-box;
     box-sizing:         border-box;
@@ -776,6 +776,10 @@ h1.intro-title {
     top: 0;
     left: 0;
     width: 100%;
+}
+
+.gallery-item:hover .gallery-caption {
+    opacity: 1;
 }
 
 
@@ -915,6 +919,7 @@ h1.intro-title {
 }
 
 .widget_calendar thead th {
+    background-color: #ebebeb;
     background-color: rgba(235, 235, 235, 0.1);
 }
 
@@ -1001,7 +1006,8 @@ h1.intro-title {
 }
 
 .searchform input[type="submit"] {
-    background: rgba(235, 235, 235, 0.1);
+    background-color: #ebebeb;
+    background-color: rgba(235, 235, 235, 0.1);
     border-color: #ddd;
     color: #333;
     cursor: pointer;
@@ -1053,6 +1059,7 @@ h1.intro-title {
     .col_6p {
         float: left; 
         margin-right: -100%;
+        position: relative;
     }
 
     .col_1{width: 14.17%;}

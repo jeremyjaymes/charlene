@@ -172,6 +172,10 @@ function charlene_scripts_and_styles() {
         // register main stylesheet
         wp_register_style( 'charlene-stylesheet', get_stylesheet_uri(), array(), '', 'all' );
 
+        // register IE condition style
+        wp_register_style( 'charlene-ie-stylesheet', get_stylesheet_directory_uri() . '/lib/css/ie.css', array(), '', '' );
+        wp_style_add_data( 'charlene-ie-stylesheet', 'conditional', 'lt IE 9' );
+
 
         // comment reply script for threaded comments
         if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
@@ -180,6 +184,7 @@ function charlene_scripts_and_styles() {
 
         // enqueue everything
         wp_enqueue_style( 'charlene-stylesheet' );
+        wp_enqueue_style( 'charlene-ie-stylesheet' );
 
     }
 
