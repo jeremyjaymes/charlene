@@ -37,7 +37,7 @@
       </div><!-- entry-meta -->
    </header><!-- .entry-header -->
    
-   <div class="entry-content" itemprop="audio">
+   <div class="entry-content" itemprop="articleBody">
       <?php 
          the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'charlene' ) ); 
 

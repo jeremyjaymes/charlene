@@ -42,7 +42,7 @@
       <?php the_excerpt(); ?>
    </div><!-- .entry-summary -->  
    <?php else : //* Archives and single posts ?>
-   <div class="entry-content" itemprop="text">
+   <div class="entry-content" itemprop="articleBody">
       <?php 
          if ( is_single() && has_post_thumbnail() ) :
             the_post_thumbnail( 'post-full-width' );

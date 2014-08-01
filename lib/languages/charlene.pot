@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Charlene Theme 2.0\n"
-"POT-Creation-Date: 2014-07-30 11:41-0600\n"
-"PO-Revision-Date: 2014-07-30 11:41-0600\n"
+"POT-Creation-Date: 2014-07-30 22:27-0600\n"
+"PO-Revision-Date: 2014-07-30 22:37-0600\n"
 "Last-Translator: Jeremy Vossman <jeremy@papertreedesign.com>\n"
 "Language-Team:  <jeremy@papertreedesign.com>\n"
 "Language: en_US\n"
@@ -32,7 +32,7 @@ msgstr ""
 
 #: ../author.php:25
 #, php-format
-msgid "<h1 class=\"author-name fn n\">Author: %s</h1>"
+msgid "<h1 class=\"author-name fn n\" itemprop=\"name\">Author: %s</h1>"
 msgstr ""
 
 #: ../author.php:55 ../content-aside.php:59 ../content-audio.php:59
@@ -58,8 +58,11 @@ msgstr ""
 #, php-format
 msgid ""
 "<span class=\"byline vcard\">Posted <time class=\"updated\" datetime=\"%1$s"
-"\" pubdate>%2$s</time> by <span class=\"author\"><a class=\"url fn n\" href="
-"\"%3$s\" rel=\"author\">%4$s</a></span></span> "
+"\" pubdate itemprop=\"datePublished\">%2$s</time> by <span class=\"entry-"
+"author\" itemprop=\"author\" itemscope=\"itemscope\" itemtype=\"http://"
+"schema.org/Person\"><a class=\"url fn n\" href=\"%3$s\" itemprop=\"url\" rel="
+"\"author\"><span class=\"entry-author_name\" itemprop=\"name\">%4$s</span></"
+"a></span></span>"
 msgstr ""
 
 #: ../content-aside.php:35 ../content-audio.php:35 ../content-gallery.php:35
