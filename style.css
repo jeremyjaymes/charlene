@@ -974,13 +974,19 @@ h1.intro-title {
 
 .charlene-recent-posts .entry-title {
     font-weight: 700;
-    font-style: italic;
     font-size: 16px;
     margin-bottom: 10px;
 }
 
-.charlene-recent-posts .entry-title a {
+.charlene-recent-posts .entry-title a,
+.charlene-recent-posts .entry-title a:visited {
     border: 0;
+    color: #80949c;
+}
+
+.charlene-recent-posts .entry-title a:hover, 
+.charlene-recent-posts .entry-title a:active {
+    color: #0f3647;
 }
 
 .post-widget-area {

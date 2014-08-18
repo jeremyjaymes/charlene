@@ -56,7 +56,7 @@ class Charlene_Theme_Customize {
     }
 
     /**
-    * This will output the custom WordPress settings to the live theme's WP head.
+    * Output custom CSS via hook
     * 
     * Used by hook: 'wp_head'
     * 
@@ -71,8 +71,8 @@ class Charlene_Theme_Customize {
               self::generate_css('a, a:visited', 'color', 'link_color');
               self::generate_css('input[type="button"], input[type="reset"], input[type="submit"], button', 'background-color', 'link_color');
               self::generate_css('input[type="button"], input[type="reset"], input[type="submit"], button', 'border-color', 'link_color');
-              self::generate_css('.entry-title a:hover, .sidebar-secondary a:hover, .entry-title a:active, .sidebar-secondary a:active ', 'color', 'link_color');
-              self::generate_css('a:hover, a:active', 'color', 'link_hover_color'); 
+              self::generate_css('.entry-title a:hover, .sidebar-secondary a:hover, .entry-title a:active, .sidebar-secondary a:active, .charlene-recent-posts .entry-title a, .charlene-recent-posts .entry-title a:visited ', 'color', 'link_color');
+              self::generate_css('a:hover, a:active, .charlene-recent-posts .entry-title a:hover, .charlene-recent-posts .entry-title a:active',  'color', 'link_hover_color'); 
             ?>
       </style> 
       <!--/Customizer CSS-->
@@ -80,10 +80,7 @@ class Charlene_Theme_Customize {
    }
 
    /**
-    * This outputs the javascript needed to automate the live settings preview.
-    * Also keep in mind that this function isn't necessary unless your settings 
-    * are using 'transport'=>'postMessage' instead of the default 'transport'
-    * => 'refresh'
+    * Output js for live preview
     * 
     * Used by hook: 'customize_preview_init'
     * 
@@ -131,11 +128,11 @@ class Charlene_Theme_Customize {
     }
 }
 
-// Setup the Theme Customizer settings and controls...
+// Setup the Theme Customizer
 add_action( 'customize_register' , array( 'Charlene_Theme_Customize' , 'register' ) );
 
-// Output custom CSS to live site
+// Output custom CSS to wp_head
 add_action( 'wp_head' , array( 'Charlene_Theme_Customize' , 'header_output' ) );
 
-// Enqueue live preview javascript in Theme Customizer admin screen
+// Enqueue live preview javascript
 add_action( 'customize_preview_init' , array( 'Charlene_Theme_Customize' , 'live_preview' ) );
