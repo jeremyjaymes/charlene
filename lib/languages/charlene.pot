@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Charlene Theme 2.0\n"
-"POT-Creation-Date: 2014-07-30 22:27-0600\n"
-"PO-Revision-Date: 2014-07-30 22:37-0600\n"
+"POT-Creation-Date: 2014-08-19 16:55-0600\n"
+"PO-Revision-Date: 2014-08-19 16:55-0600\n"
 "Last-Translator: Jeremy Vossman <jeremy@papertreedesign.com>\n"
 "Language-Team:  <jeremy@papertreedesign.com>\n"
 "Language: en_US\n"
@@ -133,17 +133,17 @@ msgstr ""
 msgid "Powered by %1$s and %2$s"
 msgstr ""
 
-#: ../functions.php:132
+#: ../functions.php:94
 msgid "Site Intro"
 msgstr ""
 
-#: ../functions.php:142
+#: ../functions.php:104
 msgid ""
 "The main widget area. If the sidebar is split left and right this is the "
 "left area."
 msgstr ""
 
-#: ../functions.php:153
+#: ../functions.php:115
 msgid ""
 "A useful widget area which appears after the post single and before comments."
 msgstr ""

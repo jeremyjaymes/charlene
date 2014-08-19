@@ -32,7 +32,7 @@
          ?>
 
          <?php if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) : ?>
-         <span class="sep"> | </span><span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'charlene' ), __( '1 Comment', 'charlene' ), __( '% Comments', 'twentyfourteen' ) ); ?></span>
+         <span class="sep"> | </span><span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'charlene' ), __( '1 Comment', 'charlene' ), __( '% Comments', 'charlene' ) ); ?></span>
          <?php endif; ?>
       </div><!-- entry-meta -->
    </header><!-- .entry-header -->

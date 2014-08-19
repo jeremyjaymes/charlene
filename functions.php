@@ -35,12 +35,6 @@ function charlene_setup_theme() {
     // language support
     load_theme_textdomain( 'charlene', get_template_directory() . '/lib/languages' );
 
-    // remove version from head and css/js output
-    add_action( 'init', 'charlene_cleanup' );
-
-    // remove version from feeds
-    add_filter( 'the_generator', 'charlene_remove_feed_version' );
-
     // load editor styles
     add_action( 'init', 'charlene_editor_styles' );
 
@@ -83,38 +77,6 @@ function charlene_setup_theme() {
 }
 
 endif; /*-- end theme set up --*/
-
-/**
- * Clean up version numbers
- *
- * This function prevents snooping but it is not the pathway
- * to a secure site. Updates should always be maintained.
- *
- * @since Charlene 2.0
- */
-function charlene_cleanup() {
-  remove_action('wp_head', 'wp_generator');
-
-  add_filter( 'style_loader_src', 'charlene_remove_css_js_ver', 9999, 2 );
-  add_filter( 'script_loader_src', 'charlene_remove_css_js_ver', 9999, 2 );
-
-}
-
-/**
- * Remove version number from RSS feed
- */
-function charlene_remove_feed_version() {
-  return '';
-}
-
-/**
- * Remove version number from js and css
- */
-function charlene_remove_css_js_ver( $src ) {
-    if( strpos( $src, 'ver=' ) )
-        $src = remove_query_arg( 'ver', $src );
-    return $src;
-}
 
 /**
  * Register widgets and widget areas
