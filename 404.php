@@ -3,6 +3,8 @@
  * 404 Error Template
  *
  * @package Charlene
+ * @subpackage Template
+ * @author jeremyjaymes
  * @since Charlene 1.0
  */
 

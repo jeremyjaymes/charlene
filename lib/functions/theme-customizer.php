@@ -85,6 +85,7 @@ class Charlene_Theme_Customize {
     * Used by hook: 'customize_preview_init'
     * 
     * @see add_action('customize_preview_init',$func)
+    *
     * @since Charlene 2.0
     */
    public static function live_preview() {
@@ -109,6 +110,7 @@ class Charlene_Theme_Customize {
      * @param string $postfix Optional. Anything that needs to be output after the CSS property
      * @param bool $echo Optional. Whether to print directly to the page (default: true).
      * @return string Returns a single line of CSS with selectors and a property.
+     *
      * @since Charlene 2.0
      */
     public static function generate_css( $selector, $style, $mod_name, $prefix='', $postfix='', $echo=true ) {

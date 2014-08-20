@@ -1,6 +1,6 @@
 <?php
 /**
- * Post Format Template - Audio
+ * Post Format Template - Video
  *
  * @package Charlene
  * @subpackage Template
