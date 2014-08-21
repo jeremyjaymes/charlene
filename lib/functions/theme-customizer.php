@@ -90,11 +90,11 @@ class Charlene_Theme_Customize {
     */
    public static function live_preview() {
       wp_enqueue_script( 
-           'charlene-themecustomizer', // Give the script a unique ID
-           get_template_directory_uri() . '/lib/js/theme-customizer.js', // Define the path to the JS file
-           array(  'jquery', 'customize-preview' ), // Define dependencies
-           '', // Define a version (optional) 
-           true // Specify whether to put in footer (leave this true)
+           'charlene-themecustomizer',
+           get_template_directory_uri() . '/lib/js/theme-customizer.js',
+           array(  'jquery', 'customize-preview' ), 
+           '', 
+           true
       );
    }
 

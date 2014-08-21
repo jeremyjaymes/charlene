@@ -2,7 +2,7 @@
 Theme Name: Charlene
 Theme URI: http://papertreedesign.com/themes/
 Description: A simple, user-friendly, two column theme that is meant to put focus on your content.
-Version: 2.0-beta.3.1
+Version: 2.0
 Author: Papertree Design
 Author URI: http://papertreedesign.com
 Tags: two-columns, right-sidebar, responsive-layout, post-formats, featured-images, translation-ready, editor-style, full-width-template, threaded-comments, white
@@ -57,7 +57,7 @@ input[type="search"] {
 .wrap,
 .content-column-row,
 .gallery {
-    zoom:1; /* For IE 6/7 */
+    zoom:1;
 }
 
 /* ## Defaults  
