@@ -2,7 +2,7 @@
 
 Charlene is a WordPress theme built for the writer in you.
 
-The aim is to keep it as simple as possible. Activate, (maybe) make a few mods, set up your widgets, add in your favortie plugins, and start writing.
+The aim is to keep it as simple as possible. Activate, (maybe) make a few mods, set up your widgets, add in your favorite plugins, and start writing.
 
 Version 2 has been completely reworked from top to bottom, do not expect to upgrade from version 1 or older. That being said, the transition should be quite painless.
 
