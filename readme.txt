@@ -10,11 +10,18 @@ Version 2 has been completely reworked from top to bottom, do not expect to upgr
 == Submit Bugs or Issues: ==
 https://github.com/jeremyjaymes/charlene/issues
 
+== Changelog ==
+https://github.com/jeremyjaymes/charlene
+
 == Demo ==
 http://papertreedesign.com/themes
 
 == Docs ==
 Check out included /lib/docs.
+
+== Credits ==
+_s (underscores): http://underscores.me/
+Twenty Fourteen: http://wordpress.org/themes/twentyfourteen
 
 == License ==
 The Charlene Theme, Copyright 2014 Papertree Design

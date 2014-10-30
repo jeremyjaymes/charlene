@@ -89,7 +89,7 @@ function charlene_widgets_init() {
     register_widget( 'Charlene_Widget_Recent' );
 
     register_sidebar(array(
-       'name' => 'Site Intro',
+       'name' => __( 'Site Intro', 'charlene' ),
        'id' => 'site-intro',
        'description' => __('Site Intro', 'charlene'),
        'before_widget' => '<section id="%1$s" class="site-intro widget %2$s">',
@@ -99,7 +99,7 @@ function charlene_widgets_init() {
     ));
 
     register_sidebar(array(
-       'name' => 'Sidebar Main',
+       'name' => __( 'Sidebar Main', 'charlene' ),
        'id' => 'sidebar-main',
        'description' => __('The main widget area. If the sidebar is split left and right this is the left area.', 'charlene'),
        'before_widget' => '<section id="%1$s" class="widget %2$s">',
@@ -110,7 +110,7 @@ function charlene_widgets_init() {
    
     //Below post widget ready area.
     register_sidebar(array(
-       'name' => 'After Post',
+       'name' => __( 'After Post', 'charlene' ),
        'id'   => 'after-post',
        'description' => __('A useful widget area which appears after the post single and before comments.', 'charlene'),
        'before_widget' => '<div id="%1$s" class="widget %2$s">',
@@ -131,26 +131,21 @@ function charlene_scripts_and_styles() {
 
     if (!is_admin()) {
 
-        // register main stylesheet
-        wp_register_style( 'charlene-stylesheet', get_stylesheet_uri(), array(), '', 'all' );
+        // main stylesheet
+        wp_enqueue_style( 'charlene-stylesheet', get_stylesheet_uri(), array(), '', 'all' );
 
-        // register IE condition style
-        wp_register_style( 'charlene-ie-stylesheet', get_stylesheet_directory_uri() . '/lib/css/ie.css', array(), '', '' );
+        // IE condition style
+        wp_enqueue_style( 'charlene-ie-stylesheet', get_stylesheet_directory_uri() . '/lib/css/ie.css', array(), '', '' );
         wp_style_add_data( 'charlene-ie-stylesheet', 'conditional', 'lt IE 9' );
 
-        // register theme js
-        wp_register_script( 'charlene-theme-functions', get_stylesheet_directory_uri() . '/lib/js/theme-functions.js', array('jquery'), '', true );
+        // theme js
+        wp_enqueue_script( 'charlene-theme-functions', get_stylesheet_directory_uri() . '/lib/js/theme-functions.js', array('jquery'), '', true );
 
 
         // comment reply script for threaded comments
         if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
               wp_enqueue_script( 'comment-reply' );
         }
-
-        // enqueue everything
-        wp_enqueue_style( 'charlene-stylesheet' );
-        wp_enqueue_style( 'charlene-ie-stylesheet' );
-        wp_enqueue_script( 'charlene-theme-functions' );
 
     }
 
@@ -162,7 +157,7 @@ function charlene_scripts_and_styles() {
  * @since Charlene 2.0
  */
 function charlene_editor_styles() {
-    $font_url = 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic';
+    $font_url = '//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic';
     // Add theme editor style
     add_editor_style( array( 'lib/admin/editor-style.css', str_replace( ',', '%2C', $font_url ) ) );
 }
@@ -187,6 +182,3 @@ require get_template_directory() . '/lib/functions/template-functions.php';
 
 //* Custom comment callback
 require get_template_directory() . '/lib/functions/theme-comments.php';
-
-//* Theme shortcodes
-require get_template_directory() . '/lib/functions/shortcodes.php';
