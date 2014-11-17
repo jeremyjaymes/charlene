@@ -55,7 +55,7 @@ function charlene_setup_theme() {
      * See http://codex.wordpress.org/Function_Reference/add_theme_support#HTML5
      */
     add_theme_support( 'html5', array(
-      'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
+      'search-form', 'comment-form', 'gallery', 'caption'
     ) );
 
     /*
@@ -122,6 +122,38 @@ function charlene_widgets_init() {
 }
 add_action( 'widgets_init', 'charlene_widgets_init' );
 
+/**
+ * Register fonts url
+ * 
+ * @since 2.0.3
+ * @param string $fonts_url
+ * @return string
+ */
+function charlene_fonts_url() {
+    $fonts_url = '';
+ 
+    /* Translators: If there are characters in your language that are not
+    * supported by Source Sans Pro, translate this to 'off'. Do not translate
+    * into your own language.
+    */
+    $source = _x( 'on', 'Source Sans Pro font: on or off', 'charlene' );
+ 
+ 
+    if ( 'off' !== $source ) {
+
+      $font_family = 'Source Sans Pro:300,400,700,300italic,400italic,700italic';
+ 
+      $query_args = array(
+          'family' => urlencode( $font_family ),
+          'subset' => urlencode( 'latin,latin-ext,vietnamese' ),
+      );
+ 
+      $fonts_url = add_query_arg( $query_args, '//fonts.googleapis.com/css' );
+    }
+ 
+    return $fonts_url;
+}
+
 
 /**
  * Register require scripts
@@ -133,6 +165,9 @@ function charlene_scripts_and_styles() {
 
         // main stylesheet
         wp_enqueue_style( 'charlene-stylesheet', get_stylesheet_uri(), array(), '', 'all' );
+
+        // fonts
+        wp_enqueue_style( 'googleFonts', charlene_fonts_url(), array(), '', 'all' );
 
         // IE condition style
         wp_enqueue_style( 'charlene-ie-stylesheet', get_stylesheet_directory_uri() . '/lib/css/ie.css', array(), '', '' );
@@ -159,20 +194,8 @@ function charlene_scripts_and_styles() {
 function charlene_editor_styles() {
     $font_url = '//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic';
     // Add theme editor style
-    add_editor_style( array( 'lib/admin/editor-style.css', str_replace( ',', '%2C', $font_url ) ) );
+    add_editor_style( array( 'lib/admin/editor-style.css', charlene_fonts_url() ) );
 }
-
-/**
- * Registers and loads fonts
- * @since Charlene 2.0
- */
-function charlene_load_fonts() {
-
-  wp_register_style('googleFonts', '//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic');
-  wp_enqueue_style( 'googleFonts');
-  
-}
-add_action('wp_print_styles', 'charlene_load_fonts');
 
 //* Theme Customizer
 require get_template_directory() . '/lib/functions/theme-customizer.php';

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Charlene Theme 2.0\n"
-"POT-Creation-Date: 2014-10-30 09:52-0600\n"
-"PO-Revision-Date: 2014-10-30 09:54-0600\n"
+"POT-Creation-Date: 2014-11-17 13:28-0600\n"
+"PO-Revision-Date: 2014-11-17 13:28-0600\n"
 "Last-Translator: Jeremy Vossman <jeremy@papertreedesign.com>\n"
 "Language-Team:  <jeremy@papertreedesign.com>\n"
 "Language: en_US\n"
@@ -156,6 +156,11 @@ msgstr ""
 #: ../functions.php:115
 msgid ""
 "A useful widget area which appears after the post single and before comments."
+msgstr ""
+
+#: ../functions.php:169
+msgctxt "Source Sans Pro font: on or off"
+msgid "on"
 msgstr ""
 
 #: ../image.php:25

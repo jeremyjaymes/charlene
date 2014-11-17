@@ -22,6 +22,8 @@ Check out included /lib/docs.
 == Credits ==
 _s (underscores): http://underscores.me/
 Twenty Fourteen: http://wordpress.org/themes/twentyfourteen
+Themeshaper: http://themeshaper.com/2014/08/13/how-to-add-google-fonts-to-wordpress-themes/
+jcastaneda: https://profiles.wordpress.org/jcastaneda
 
 == License ==
 The Charlene Theme, Copyright 2014 Papertree Design

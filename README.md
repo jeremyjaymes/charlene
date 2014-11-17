@@ -31,3 +31,8 @@ Check out /lib/docs.
 * Removed shortcodes - see [http://papertreedesign.com/wordpress-themes/charlene-theme/](http://papertreedesign.com/wordpress-themes/charlene-theme/)
 * Revised Google fonts function
 * Updated Theme URI
+
+### v2.0.3
+
+* Removed HTML5 theme support for comments-list, we have a custom callback
+* changed Google fonts enqueue functions
