@@ -33,15 +33,14 @@ class Charlene_Widget_Recent extends WP_Widget {
 	 * Display the widget.
 	 */
 	function widget( $args, $instance ) {
+
+        $title = ( ! empty( $instance['title'] ) ) ? $instance['title'] : __( 'Recently Written' );
 		
 		$title = apply_filters('widget_title', $instance['title'] );
 
-        if ( !$number = (int) $instance['number'] )
-            $number = 10;
-        else if ( $number < 1 )
-            $number = 1;
-        else if ( $number > 10 )
-            $number = 10;
+        $number = ( ! empty( $instance['number'] ) ) ? absint( $instance['number'] ) : 5;
+        if ( ! $number )
+            $number = 5;
 		
 		$cr = new WP_Query( array(
                     'posts_per_page' => $number, 
