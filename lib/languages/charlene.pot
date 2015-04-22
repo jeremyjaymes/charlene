@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Charlene Theme 2.0\n"
-"POT-Creation-Date: 2014-11-17 13:28-0600\n"
-"PO-Revision-Date: 2014-11-17 13:28-0600\n"
+"POT-Creation-Date: 2015-04-22 10:14-0600\n"
+"PO-Revision-Date: 2015-04-22 10:14-0600\n"
 "Last-Translator: Jeremy Vossman <jeremy@papertreedesign.com>\n"
 "Language-Team:  <jeremy@papertreedesign.com>\n"
 "Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.10\n"
+"X-Generator: Poedit 1.7.6\n"
 "X-Poedit-Basepath: ../\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
@@ -30,6 +30,63 @@ msgid ""
 "form below.</p>"
 msgstr ""
 
+#: ../archive.php:28
+#, php-format
+msgid "Day: %s"
+msgstr ""
+
+#: ../archive.php:31
+#, php-format
+msgid "Month: %s"
+msgstr ""
+
+#: ../archive.php:31
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: ../archive.php:34
+#, php-format
+msgid "Year: %s"
+msgstr ""
+
+#: ../archive.php:34
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: ../archive.php:37
+msgid "Asides"
+msgstr ""
+
+#: ../archive.php:40
+msgid "Galleries"
+msgstr ""
+
+#: ../archive.php:43
+msgid "Images"
+msgstr ""
+
+#: ../archive.php:46
+msgid "Video"
+msgstr ""
+
+#: ../archive.php:49
+msgid "Quotes"
+msgstr ""
+
+#: ../archive.php:52
+msgid "Links"
+msgstr ""
+
+#: ../archive.php:55
+msgid "Audio"
+msgstr ""
+
+#: ../archive.php:58 ../taxonomy-post_format.php:43
+msgid "Archives"
+msgstr ""
+
 #: ../author.php:25
 #, php-format
 msgid "<h1 class=\"author-name fn n\" itemprop=\"name\">Author: %s</h1>"
@@ -48,6 +105,10 @@ msgid "One Comment"
 msgid_plural "%1$s Comments"
 msgstr[0] ""
 msgstr[1] ""
+
+#: ../comments.php:35
+msgid "Reply"
+msgstr ""
 
 #: ../comments.php:55
 msgid "Comments are closed."
@@ -158,7 +219,7 @@ msgid ""
 "A useful widget area which appears after the post single and before comments."
 msgstr ""
 
-#: ../functions.php:169
+#: ../functions.php:139
 msgctxt "Source Sans Pro font: on or off"
 msgid "on"
 msgstr ""
@@ -230,19 +291,20 @@ msgstr ""
 msgid "Recent Posts Widget for Charlene"
 msgstr ""
 
-#: ../lib/widgets/recent-posts.php:111 widgets/recent-posts.php:111
+#: ../lib/widgets/recent-posts.php:37 ../lib/widgets/recent-posts.php:106
+#: widgets/recent-posts.php:37 widgets/recent-posts.php:106
 msgid "Recently Written"
 msgstr ""
 
-#: ../lib/widgets/recent-posts.php:120 widgets/recent-posts.php:120
+#: ../lib/widgets/recent-posts.php:109 widgets/recent-posts.php:109
 msgid "Title:"
 msgstr ""
 
-#: ../lib/widgets/recent-posts.php:123 widgets/recent-posts.php:123
+#: ../lib/widgets/recent-posts.php:112 widgets/recent-posts.php:112
 msgid "Number of posts to show:"
 msgstr ""
 
-#: ../lib/widgets/recent-posts.php:125 widgets/recent-posts.php:125
+#: ../lib/widgets/recent-posts.php:114 widgets/recent-posts.php:114
 msgid "(at most 10)"
 msgstr ""
 
@@ -277,8 +339,4 @@ msgstr ""
 
 #: ../taxonomy-post_format.php:40
 msgid "Gallery Archives"
-msgstr ""
-
-#: ../taxonomy-post_format.php:43
-msgid "Archives"
 msgstr ""
