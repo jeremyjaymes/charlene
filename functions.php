@@ -148,7 +148,7 @@ function charlene_fonts_url() {
           'subset' => urlencode( 'latin,latin-ext,vietnamese' ),
       );
  
-      $fonts_url = add_query_arg( $query_args, '//fonts.googleapis.com/css' );
+      $fonts_url = esc_url( add_query_arg( $query_args, '//fonts.googleapis.com/css' ) );
     }
  
     return $fonts_url;

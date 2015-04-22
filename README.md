@@ -36,3 +36,8 @@ Check out /lib/docs.
 
 * Removed HTML5 theme support for comments-list, we have a custom callback
 * changed Google fonts enqueue functions
+
+### v2.0.4
+* Update translation string in comments.php L35
+* Update title output in archive.php
+* Improve validation and sanitization in recent-posts.php, function update() and function form()

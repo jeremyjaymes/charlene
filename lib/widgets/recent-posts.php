@@ -93,10 +93,8 @@ class Charlene_Widget_Recent extends WP_Widget {
 	function update( $new_instance, $old_instance ) {
 		$instance = $old_instance;
 
-		/* Strip tags for title and name to remove HTML (important for text inputs). */
 		$instance['title'] = strip_tags( $new_instance['title'] );
-		$instance['number'] = strip_tags( $new_instance['number'] );
-
+		$instance['number'] = (int) $new_instance['number'];
 
 		return $instance;
 	}
@@ -105,17 +103,9 @@ class Charlene_Widget_Recent extends WP_Widget {
 	 * Displays the widget settings controls
 	 */
 	public function form( $instance ) {
-        if ( isset( $instance[ 'title' ] ) ) {
-            $title = $instance[ 'title' ];
-        } else {
-            $title = __( 'Recently Written', 'charlene' );
-        }
 
-        if ( isset( $instance['number'] ) ) {
-            $number = $instance['number'];
-        } else {
-            $number = 5;
-        }
+        $title = isset( $instance[ 'title' ] ) ? esc_attr( $instance['title'] ) : __( 'Recently Written', 'charlene' );
+        $number = isset( $instance['number'] ) ? absint( $instance['number'] ) : 5;
     ?>
           <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:','charlene'); ?></label>
           <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" /></p>

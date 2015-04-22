@@ -32,7 +32,7 @@ if ( post_password_required() ) {
                         'avatar_size'       => 34,
                         'callback'          => 'charlene_comments',
                         'type'              => 'all',
-                        'reply_text'        => 'Reply',
+                        'reply_text'        => __( 'Reply', 'charlene' ),
                         'page'              => '',
                         'per_page'          => '',
                         'reverse_top_level' => null,
