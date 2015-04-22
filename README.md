@@ -41,3 +41,4 @@ Check out /lib/docs.
 * Update translation string in comments.php L35
 * Update title output in archive.php
 * Improve validation and sanitization in recent-posts.php, function update() and function form()
+* Make compatible with widget customizer preview
