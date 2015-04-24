@@ -34,7 +34,7 @@ class Charlene_Widget_Recent extends WP_Widget {
 	 */
 	function widget( $args, $instance ) {
 
-        $title = ( ! empty( $instance['title'] ) ) ? $instance['title'] : __( 'Recently Written' );
+        $title = ( ! empty( $instance['title'] ) ) ? $instance['title'] : __( 'Recently Written', 'charlene' );
 		
 		$title = apply_filters('widget_title', $title, $instance );
 

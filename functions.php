@@ -41,6 +41,9 @@ function charlene_setup_theme() {
     // Add feed links
     add_theme_support( 'automatic-feed-links' );
 
+    // Title tag support
+    add_theme_support( 'title-tag' );
+
     // Post thumbnails
     add_theme_support( 'post-thumbnails' );
     

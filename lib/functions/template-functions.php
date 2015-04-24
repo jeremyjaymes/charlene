@@ -41,6 +41,21 @@ function charlene_paging_nav() {
 endif; // End Page Nav
 
 /**
+ * Fallback for title tag
+ *
+ * @since 2.0.5
+ */
+if ( ! function_exists( '_wp_render_title_tag' ) ) :
+    function charlene_render_title_tag() {
+        ?>
+        <title><?php wp_title( '|', true, 'right' ); ?></title>
+        <?php
+    }
+    add_action( 'wp_head', 'charlene_render_title_tag', 0 );
+    add_filter( 'wp_title', 'charlene_wp_title', 10, 2 );
+endif;
+
+/**
  * Filters wp_title to print a neat <title> tag based on what is being viewed.
  * @link http://codex.wordpress.org/Function_Reference/wp_title
  *
@@ -73,7 +88,7 @@ function charlene_wp_title( $title, $sep ) {
 
     return $title;
 }
-add_filter( 'wp_title', 'charlene_wp_title', 10, 2 );
+
 
 /** 
  * Filter WordPress body class
