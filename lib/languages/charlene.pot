@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Charlene Theme 2.0\n"
-"POT-Creation-Date: 2015-04-22 11:14-0600\n"
-"PO-Revision-Date: 2015-04-22 11:14-0600\n"
+"POT-Creation-Date: 2015-04-24 15:52-0600\n"
+"PO-Revision-Date: 2015-04-24 15:52-0600\n"
 "Last-Translator: Jeremy Vossman <jeremy@papertreedesign.com>\n"
 "Language-Team:  <jeremy@papertreedesign.com>\n"
 "Language: en_US\n"
@@ -196,30 +196,30 @@ msgstr ""
 msgid "Powered by %1$s and %2$s"
 msgstr ""
 
-#: ../functions.php:92 ../functions.php:94
+#: ../functions.php:95 ../functions.php:97
 msgid "Site Intro"
 msgstr ""
 
-#: ../functions.php:102
+#: ../functions.php:105
 msgid "Sidebar Main"
 msgstr ""
 
-#: ../functions.php:104
+#: ../functions.php:107
 msgid ""
 "The main widget area. If the sidebar is split left and right this is the "
 "left area."
 msgstr ""
 
-#: ../functions.php:113
+#: ../functions.php:116
 msgid "After Post"
 msgstr ""
 
-#: ../functions.php:115
+#: ../functions.php:118
 msgid ""
 "A useful widget area which appears after the post single and before comments."
 msgstr ""
 
-#: ../functions.php:139
+#: ../functions.php:142
 msgctxt "Source Sans Pro font: on or off"
 msgid "on"
 msgstr ""
@@ -256,8 +256,8 @@ msgstr ""
 msgid "Next &raquo;"
 msgstr ""
 
-#: ../lib/functions/template-functions.php:71
-#: functions/template-functions.php:71
+#: ../lib/functions/template-functions.php:89
+#: functions/template-functions.php:89
 #, php-format
 msgid "Page %s"
 msgstr ""

@@ -42,3 +42,6 @@ Check out /lib/docs.
 * Update title output in archive.php
 * Improve validation and sanitization in recent-posts.php, function update() and function form()
 * Make compatible with widget customizer preview
+
+### v2.0.5
+* add support for title-tag along with fallback for pre 4.1

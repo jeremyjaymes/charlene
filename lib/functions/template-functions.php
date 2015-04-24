@@ -41,7 +41,10 @@ function charlene_paging_nav() {
 endif; // End Page Nav
 
 /**
- * Fallback for title tag
+ * Legacy Title Tag Support
+ *
+ * Adds pre 4.1 support for Title Tag and includes wp_title
+ * filter. 
  *
  * @since 2.0.5
  */
